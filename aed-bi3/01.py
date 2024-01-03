@@ -29,7 +29,7 @@ with open('aed-bi3/arquivo.txt', 'r', encoding='utf-8') as arquivo:
     print(f'A temperatura média é {soma}') 
     
     soma = 0
-    for dados in leitura[1].strip().split(','):
+    for dados in leitura[1].strip().split(','): #!PEGANDO A MEDIA DA PRESSÃO
         soma += float(dados) 
     soma = soma // 5    
     print(f'A pressão média é: {soma}')
