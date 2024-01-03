@@ -14,14 +14,20 @@ verifique se a string comentário contém alguma das palavras proibidas. Se cont
 exiba "Conteúdo inadequado", caso contrário, exiba "Comentário permitido"
 """
 
-usu = str(input('Digite um comentário: ')) 
+def menções(texto):
+    palavras = texto.split()  
+    resultado = []
 
-def menção(usuario):
-    if '@' in usuario:
-        print(f'Este comentário possui uma menção a um usuário.')
-        
-        
-    else:
-        print('Este comentário não possui menção a um usuário.')
+    for palavra in palavras:
+        if palavra.startswith('@'):
+            resultado.append('USUARIO_MENCIONADO')
+        else:
+            resultado.append(palavra)
 
-menção(usu)       
+    return ' '.join(resultado)  
+
+comentario = str(input('Digite um comentário: '))
+
+comentario_modificado = menções(comentario)
+
+print(comentario_modificado)
