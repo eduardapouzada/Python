@@ -11,11 +11,14 @@ Resultado da divisão: 2.0
 Resultado da divisão: 1.0
 Chegou a zero
 """
+numero = float(input('Digite um número para dividir: '))
 
-num = float(input('Digite um número para dividir: '))
-
-while num > 1:
-    num = num //2 
-    print(f'Resultado da divisão: {num}')
+def inteiros(num):
     
-print('Chegou a zero!')    
+    while num > 1:
+        num = num //2 
+        print(f'Resultado da divisão: {num}')
+        
+    print('Chegou a zero!')    
+    
+inteiros(numero)    
