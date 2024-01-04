@@ -18,7 +18,7 @@ Celsius.
 """
 
 
-with open('aed-bi3/arquivo.txt', 'r', encoding='utf-8') as arquivo:
+with open('aed-3bi/arquivo.txt', 'r', encoding='utf-8') as arquivo:
     leitura = arquivo.readlines()
     
     soma = 0 
