@@ -1,0 +1,8 @@
+Python é uma linguagem de programação de alto nível,
+interpretada de script, imperativa,
+ orientada a objetos, funcional, 
+de tipagem dinâmica e forte.
+C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. 
+Desde os anos 1990 é uma das linguagens comerciais mais populares, 
+sendo bastante usada também na academia por seu 
+grande desempenho e base de utilizadores.

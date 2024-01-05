@@ -9,13 +9,12 @@ dois = str(input('SEGUNDO ARQUIVO: '))
 
 def arquivos(nomeUM, nomeDOIS):
     nome = 'aed-3bi/2lista/' + nomeUM
-    nome2 = 'aed-3bi/2lista/' + nomeDOIS   
-    
-    with open(nome, 'w') as arquivoUM:
-        conteudo = 'Python e uma linguagem de programacao de alto nivel, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte.'
+    nome2 = 'aed-3bi/2lista/' + nomeDOIS 
+    with open(nome, 'w', encoding='utf-8') as arquivoUM:
+        conteudo = 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.'
         arquivoUM.write(conteudo.lower())
         
-    with open(nome, 'r+') as arquivoUM:
+    with open(nome, 'r+') as arquivoUM:   
         with open(nome2, 'w') as arquivoDOIS:
             for caracter in arquivoUM.read():
                 if caracter in 'aeiou':
@@ -23,5 +22,6 @@ def arquivos(nomeUM, nomeDOIS):
                 else:
                     arquivoDOIS.write(caracter)    
        
+
 arquivos(um, dois)        
         
