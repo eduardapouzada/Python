@@ -31,5 +31,5 @@ with open('aed-3bi/2lista/alunos.txt', 'r+', encoding='utf-8') as arquivoAlunos:
                 else:    
                     arquivoAlunos.write(str(nota) + '=')
                 
-            
-        
+                        
+    
