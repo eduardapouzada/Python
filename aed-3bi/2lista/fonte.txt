@@ -1,0 +1,6 @@
+As linguagens de programação possuem um papel fundamental tanto no desenvolvimento de sites e softwares,
+quanto em áreas mais complexas como ciência de dados, 
+inteligência artificial, etc.
+
+
+//comentario 
