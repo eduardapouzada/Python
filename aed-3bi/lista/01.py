@@ -46,7 +46,6 @@ def adicionar_produto(estoque, produto, quantidade):
         estoque[produto] = quantidade   
         
  
-def vender_produto():
     
  
  
