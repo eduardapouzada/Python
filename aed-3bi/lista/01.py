@@ -40,6 +40,7 @@ nome = str(input('Informe o nome do produto: '))
 quant = int(input('Informe a quantidade: '))
 
 def adicionar_produto(estoque, produto, quantidade):
+    
     if produto in estoque:
         estoque[produto] += quantidade
     else:
